@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            background-color: lightgray;
+        }
+        @media(min-width: 768px){
+            body{
+                background-color: white;
+            }
+            .flex-container{
+                flex-direction: row;
+                justify-content:center;
+                align-items: center;
+            }
+        }
+        .flex-child{
+            background-color: green;
+            border: 1px solid yellowgreen;
+            padding:5px;
+        }
+        table{
+            margin-bottom: 50px;
+        }
+        table, th, td{
+            font-family: arial;
+            border-color: solid black;
+            border: 1px solid black;
+            padding: 5px;
+            border-collapse: collapse;
+        }
+        th, td{
+            padding:10px;
+            text-align: center;
+         }
+         error{
+            background-color: rgb(red, green, blue);
+            color: rgb(red, green, blue)
+         }
+        
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-child">
+            A
+        </div>
+        <div class="flex-child">
+            B
+        </div>
+        <div class="flex-child">
+            C
+        </div>
+    </div>
+
+    <h2>tables</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+                <th>Header 4</th>
+            </tr>      
+        </thead>
+        <tbody>
+            <tr>
+                <td>data 1</td>
+                <td class="error">1.0</td>
+                <td>data 3</td>
+                <td>data 4</td>
+            </tr>
+            <tr>
+                <td>data 5</td>
+                <td>data 6</td>
+                <td>data 7</td>
+                <td>data 8</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Empld</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>email</th>
+                <th>age</th>
+            </tr>      
+        </thead>
+        <tbody>
+            <tr>
+                <td>E342</td>
+                <td>Bill</td>
+                <td>Evans</td>
+                <td>Bill@devcurry.com</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>E343</td>
+                <td>Laura</td>
+                <td>Matt</td>
+                <td>laura@devcurry.com</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>E344</td>
+                <td>Ram</td>
+                <td>Kumar</td>
+                <td>ram@devcurry.com</td>
+                <td>56</td>
+            </tr>
+            <tr>
+                <td>E345</td>
+                <td>Yuri</td>
+                <td>Gagrin</td>
+                <td>yuri@devcurry.com</td>
+                <td>39</td>
+            </tr>
+            <tr>
+                <td>E346</td>
+                <td>Asha</td>
+                <td>Singh</td>
+                <td>asha@devcurry.com</td>
+                <td>42</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
